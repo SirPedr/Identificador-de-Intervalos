@@ -1,0 +1,103 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: #292929;
+  background-image: url("../imgs/bgPattern.png");
+  color: white;
+  font-family: 'Patua One', sans-serif;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+header{
+  font-family: 'Patua One', sans-serif;
+  background: #8a00ab;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+#tituloPrincipal{
+  margin: 0;
+  padding: 0.4em;
+}
+
+header > h1::before{
+  content: attr(data-before);
+  margin-right: 0.15em;
+}
+
+main > label > h2{
+  display: inline;
+  font-weight: lighter;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+main > p{
+  font-size: 2em;
+  text-align: center;
+  padding: 0em 2em;
+}
+
+::selection{
+  background-color: #8a00ab;
+  color: white;
+}
+
+:focus{
+  outline: none;
+}
+
+/*Estilização de ID's*/
+#ghIcon{
+  width: 3em;
+  padding-left: .8em;
+  cursor: pointer;
+}
+
+.selects-notas{
+  font-size: 1em;
+  font-family: 'Patua One';
+  font-size: 1.3em;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #8a00ab;
+}
+
+.texto-destacado{
+  color: #8a00ab;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) and (min-height: 550px){
+  #tituloPrincipal{
+    padding: 0;
+    font-size: 1.5em;
+  }
+  main > h1{
+    font-size: 1em;
+    font-weight: lighter;
+  }
+
+  main > p{
+    font-size: 1.3em;
+  }
+}
+
+@media screen and(min-width: 2560px){
+  body{
+    background-color: yellow;
+  }
+}

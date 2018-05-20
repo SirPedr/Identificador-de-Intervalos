@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Patua+One">
+    <link rel="stylesheet" href="style/stylishMusic.css">
+    <link rel="icon" href="imgs/icon.png">
+    <title>Identificador De Intervalos</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="tituloPrincipal" data-before="🎝">Identificador de Intervalos</h1>
+      <a><img src="imgs/ghIcon.png" id="ghIcon"></a>
+    </header>
+    <main>
+      <h1>1. Escolha uma tonalidade maior: </h1>
+      <label>
+        <h2>Tonalidade: </h2>
+          <select id="escolhaTonalidade" class="selects-notas">
+            <option value="C">C (Dó)</option>
+            <option value="C#">C# (Dó#)</option>
+            <option value="D">D (Ré)</option>
+            <option value="D#">D# (Ré#)</option>
+            <option value="E">E (Mi)</option>
+            <option value="F">F (Fá)</option>
+            <option value="F#">F# (Fá#)</option>
+            <option value="G">G (Sol)</option>
+            <option value="G#">G# (Sol#)</option>
+            <option value="A">A (Lá)</option>
+            <option value="A#">A# (Lá#)</option>
+            <option value="B">B (Si)</option>
+          </select>
+      </label>
+      <h1>2. Escolha a nota de referência </h1>
+      <section>
+        <select id="selectSegundaNota" class="selects-notas">
+          <option value="C">C (Dó)</option>
+          <option value="C#">C# (Dó#)</option>
+          <option value="D">D (Ré)</option>
+          <option value="D" selected>D (Ré)</option>
+          <option value="D#">D# (Ré#)</option>
+          <option value="E">E (Mi)</option>
+          <option value="F">F (Fá)</option>
+          <option value="F#">F# (Fá#)</option>
+          <option value="G">G (Sol)</option>
+          <option value="G#">G# (Sol#)</option>
+          <option value="A">A (Lá)</option>
+          <option value="A#">A# (Lá#)</option>
+          <option value="B">B (Si)</option>
+        </select>
+      </section>
+      <p>A nota <span class="texto-destacado" id="notaEscolhida">D</span> na tonalidade de <span class="texto-destacado" id="tonica">C</span> é uma <span class="texto-destacado" id="classificacaoIntervalo">segunda maior</span>,
+         numa distância de <span class="texto-destacado" id="distanciaNotas">2</span> tons(m).</p>
+    </main>
+    <script src="scripts/identificarIntervalos.js"></script>
+  </body>
+</html>
