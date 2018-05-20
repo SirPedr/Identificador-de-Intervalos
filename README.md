@@ -16,6 +16,6 @@ Um script que consegue identificar o intervalo entre duas notas musicais
 #### A Fazer:
  - [x] Primeiro Commit
  - [ ] Acrescenter em tonalidades menores
- - [ ] Resolver o bug do 'select' (opções fantasma)
+ - [x] Resolver o bug do 'select' (opções fantasma)
  
 ### Já testou? https://sirpedr.github.io/Identificador-de-Intervalos
